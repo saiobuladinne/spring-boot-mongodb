@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "76073c15-c123-4501-8243-16f8e3aa21ac",
+		"name": "SpringBoot-MongoDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1408206"
+	},
+	"item": [
+		{
+			"name": "Create_Expense",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"expenseName\": \"Netflix\",\n    \"expenseCategory\": \"ENTERTAINMENT\",\n    \"expenseAmount\": 10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/expense",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"expense"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Expense",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/expense",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"expense"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_Expense",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/expense/663c5111ddd403636e029413",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"expense",
+						"663c5111ddd403636e029413"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_Expense",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"id\": \"663c5111ddd403636e029413\",\n        \"expenseName\": \"Netflix\",\n        \"expenseCategory\": \"ENTERTAINMENT\",\n        \"expenseAmount\": 20\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/expense",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"expense"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
